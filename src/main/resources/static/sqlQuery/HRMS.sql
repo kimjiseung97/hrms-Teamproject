@@ -277,3 +277,7 @@ values ('박원영', '1991-08-02', '2023-05-12', 'young2222@samjosangsa.com', '2
 -- 결재데이터 생성
 insert into hr_confirm (con_title, CON_CONTENT, CON_DATE, CON_STATUS, FROM_EMP_NO, TO_EMP_NO) values ('중앙00학원 사내앱 개발 관련의 건', '테스트 결재문건입니다.', '2023-05-24 16:49:09', 'N', 3, 2);
 
+-- 샘플 메일 데이터 생성
+insert into hr_email (mail_to , mail_from, mail_title, mail_content)
+values(2,6,"결제부탁드립니다","테스트용메일입니다");
+--  mail_to 수신자 mail_from 발신자 숫자만 바꿔서 발송할 것
