@@ -143,3 +143,7 @@ FOREIGN KEY (EMP_NO) REFERENCES TEST_EMPLOYEES(EMP_NO) on delete cascade;
 alter TABLE TEST_CLUB_REPLY add constraint FK_TEST_CLUB_REPLY_CB_NO
 FOREIGN KEY (CB_NO) REFERENCES TEST_CLUB_BOARD(CB_NO) on delete cascade;
 
+ insert into hr_email (mail_to , mail_from, mail_title, mail_content)
+ values(2,6,"결제부탁드립니다","테스트용메일입니다");
+
+      	--  mail_to 수신자 mail_from 발신자 숫자만 바꿔서 발송할 것
